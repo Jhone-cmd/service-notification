@@ -20,6 +20,7 @@ public class ServiceNotificationController {
 
     @PostMapping()
     public ResponseEntity<Void> sendNotification(@RequestBody NotificationRequest notificationRequest) {
+        System.out.println(notificationRequest.message());
         return ResponseEntity.ok().build();
     }
 }
